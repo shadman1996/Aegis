@@ -5,7 +5,8 @@ import { useRef } from "react";
 import {
   MessageSquare, ShieldCheck, BarChart3, HeadphonesIcon,
   Target, FileText, TrendingUp, Search, Bot, ChevronRight,
-  Check, Code2, Gavel, Phone,
+  Check, Code2, Gavel, Phone, UserPlus, DollarSign,
+  ClipboardList, Inbox, Users, Calendar, Home, ShoppingCart, Globe,
 } from "lucide-react";
 
 // ── Complete AI Workforce — all current & planned modules ─────────
@@ -175,6 +176,142 @@ const employees = [
     aiCost: "৳2,000 /mo",
     saving: "97%+",
   },
+  // ── Future Modules ────────────────────────────────────────────────
+  {
+    id: "hera",
+    name: "Hera",
+    role: "AI HR & Recruitment Manager",
+    department: "Human Resources · Future Module",
+    icon: UserPlus,
+    color: "#F43F5E",
+    available: false,
+    badge: "Future Module",
+    description: "Screens CVs, schedules interviews, sends offer letters, and onboards new hires — end-to-end recruitment automation so your HR team focuses on culture, not admin.",
+    skills: ["CV Screening", "Interview Scheduling", "Offer Letters", "Employee Onboarding"],
+    humanCost: "৳25,000–৳45,000 /mo",
+    aiCost: "৳2,000 /mo",
+    saving: "91%+",
+  },
+  {
+    id: "finn",
+    name: "Finn",
+    role: "AI Finance & Bookkeeper",
+    department: "Finance · Future Module",
+    icon: DollarSign,
+    color: "#10B981",
+    available: false,
+    badge: "Future Module",
+    description: "Categorizes expenses, reconciles accounts, generates monthly P&L summaries, and flags anomalies before your accountant even opens their laptop. Always audit-ready.",
+    skills: ["Expense Categorization", "Account Reconciliation", "P&L Reports", "Anomaly Alerts"],
+    humanCost: "৳30,000–৳50,000 /mo",
+    aiCost: "৳2,000 /mo",
+    saving: "93%+",
+  },
+  {
+    id: "plex",
+    name: "Plex",
+    role: "AI Project Manager",
+    department: "Operations · Future Module",
+    icon: ClipboardList,
+    color: "#7C6FF7",
+    available: false,
+    badge: "Future Module",
+    description: "Tracks tasks across Jira, Notion, and Asana, sends deadline reminders, auto-generates weekly status reports, and flags blockers before they delay delivery.",
+    skills: ["Task Tracking", "Deadline Alerts", "Status Reports", "Blocker Detection"],
+    humanCost: "৳35,000–৳55,000 /mo",
+    aiCost: "৳2,000 /mo",
+    saving: "94%+",
+  },
+  {
+    id: "iris",
+    name: "Iris",
+    role: "AI Email Manager",
+    department: "Communications · Future Module",
+    icon: Inbox,
+    color: "#63DCB8",
+    available: false,
+    badge: "Future Module",
+    description: "Triages your inbox, drafts replies in your tone, unsubscribes from spam, flags urgent emails, and archives everything else — achieving inbox zero automatically, every day.",
+    skills: ["Inbox Triage", "Reply Drafting", "Spam Removal", "Priority Flagging"],
+    humanCost: "৳15,000–৳25,000 /mo",
+    aiCost: "৳2,000 /mo",
+    saving: "87%+",
+  },
+  {
+    id: "crux",
+    name: "Crux",
+    role: "AI CRM Manager",
+    department: "Sales Operations · Future Module",
+    icon: Users,
+    color: "#F59E0B",
+    available: false,
+    badge: "Future Module",
+    description: "Keeps your CRM clean and current — logs every interaction, updates contact records, segments leads by intent score, and triggers follow-up sequences at the perfect moment.",
+    skills: ["CRM Data Entry", "Lead Segmentation", "Follow-up Automation", "Pipeline Reporting"],
+    humanCost: "৳20,000–৳35,000 /mo",
+    aiCost: "৳2,000 /mo",
+    saving: "90%+",
+  },
+  {
+    id: "nova-health",
+    name: "MediBook",
+    role: "AI Healthcare Scheduler",
+    department: "Healthcare · Future Module",
+    icon: Calendar,
+    color: "#F43F5E",
+    available: false,
+    badge: "Future Module",
+    description: "Manages patient appointment scheduling, sends reminders, handles cancellations and rescheduling, and syncs with clinic management systems — reducing no-shows by up to 40%.",
+    skills: ["Appointment Booking", "Patient Reminders", "Cancellation Handling", "Clinic System Sync"],
+    humanCost: "৳15,000–৳25,000 /mo",
+    aiCost: "৳2,000 /mo",
+    saving: "87%+",
+  },
+  {
+    id: "realt",
+    name: "Realt",
+    role: "AI Real Estate Assistant",
+    department: "Real Estate · Future Module",
+    icon: Home,
+    color: "#63DCB8",
+    available: false,
+    badge: "Future Module",
+    description: "Qualifies buyer/tenant inquiries, schedules property viewings, sends listing updates, and drafts offer summaries — so agents close more deals with less admin work.",
+    skills: ["Lead Qualification", "Viewing Scheduling", "Listing Updates", "Offer Summaries"],
+    humanCost: "৳20,000–৳35,000 /mo",
+    aiCost: "৳2,000 /mo",
+    saving: "90%+",
+  },
+  {
+    id: "merch",
+    name: "Merch",
+    role: "AI E-commerce Manager",
+    department: "E-commerce · Future Module",
+    icon: ShoppingCart,
+    color: "#8B5CF6",
+    available: false,
+    badge: "Future Module",
+    description: "Monitors inventory levels, updates product listings, handles order tracking queries, identifies best-selling trends, and auto-adjusts pricing based on competitor data.",
+    skills: ["Inventory Monitoring", "Listing Management", "Order Support", "Price Optimization"],
+    humanCost: "৳25,000–৳40,000 /mo",
+    aiCost: "৳2,000 /mo",
+    saving: "92%+",
+  },
+  {
+    id: "babel",
+    name: "Babel",
+    role: "AI Translation Specialist",
+    department: "Localization · Future Module",
+    icon: Globe,
+    color: "#F59E0B",
+    available: false,
+    badge: "Future Module",
+    description: "Translates documents, website copy, support tickets, and marketing materials across 50+ languages with brand-voice consistency — enabling true global expansion overnight.",
+    skills: ["50+ Languages", "Brand-Voice Translation", "Document Localization", "Real-Time Support"],
+    humanCost: "৳20,000–৳40,000 /mo",
+    aiCost: "৳2,000 /mo",
+    saving: "90%+",
+  },
 ];
 
 export default function AIRoster() {
@@ -192,7 +329,7 @@ export default function AIRoster() {
           <div style={{ display:"inline-flex", alignItems:"center", gap:8, padding:"4px 16px", borderRadius:999, background:"rgba(99,220,184,0.08)", border:"1px solid rgba(99,220,184,0.22)", marginBottom:20 }}>
             <Bot size={13} color="#63DCB8" />
             <span style={{ fontFamily:"'Inter', sans-serif", fontSize:"0.73rem", fontWeight:600, color:"#63DCB8", letterSpacing:"0.1em", textTransform:"uppercase" }}>
-              AI Workforce · Job Portal · {employees.length} Specialists
+              AI Workforce · Job Portal · 20 Specialists
             </span>
           </div>
           <h2 style={{ fontFamily:"'Space Grotesk', sans-serif", fontSize:"clamp(2rem, 4.5vw, 3.2rem)", fontWeight:800, color:"#F1F5F9", letterSpacing:"-0.025em", marginBottom:16, lineHeight:1.12 }}>
@@ -200,7 +337,7 @@ export default function AIRoster() {
             <span className="gradient-text-teal">Zero Salaries.</span>
           </h2>
           <p style={{ fontFamily:"'Inter', sans-serif", color:"#64748B", fontSize:"1.05rem", maxWidth:660, margin:"0 auto", lineHeight:1.75 }}>
-            Every role your business needs — from social media to cybersecurity to legal.
+            Every role your business needs — from social media to cybersecurity, legal to healthcare.
             Each AI employee works <strong style={{ color:"#E2E8F0" }}>168 hours/week</strong> at a fraction of the human cost.
             New employees added every quarter.
           </p>
@@ -237,10 +374,10 @@ export default function AIRoster() {
               >
                 {/* Badge */}
                 <div style={{ position:"absolute", top:18, right:18, padding:"3px 10px", borderRadius:999,
-                  background: emp.available ? "rgba(16,185,129,0.12)" : isAegis ? "rgba(124,111,247,0.15)" : "rgba(100,116,139,0.12)",
-                  border: emp.available ? "1px solid rgba(16,185,129,0.3)" : isAegis ? "1px solid rgba(124,111,247,0.35)" : "1px solid rgba(100,116,139,0.22)",
+                  background: emp.available ? "rgba(16,185,129,0.12)" : emp.badge === "Aegis Module" ? "rgba(124,111,247,0.15)" : emp.badge === "Future Module" ? "rgba(245,158,11,0.12)" : "rgba(100,116,139,0.12)",
+                  border: emp.available ? "1px solid rgba(16,185,129,0.3)" : emp.badge === "Aegis Module" ? "1px solid rgba(124,111,247,0.35)" : emp.badge === "Future Module" ? "1px solid rgba(245,158,11,0.3)" : "1px solid rgba(100,116,139,0.22)",
                   fontFamily:"'Inter', sans-serif", fontSize:"0.65rem", fontWeight:700,
-                  color: emp.available ? "#10B981" : isAegis ? "#7C6FF7" : "#64748B",
+                  color: emp.available ? "#10B981" : emp.badge === "Aegis Module" ? "#7C6FF7" : emp.badge === "Future Module" ? "#F59E0B" : "#64748B",
                   letterSpacing:"0.07em", textTransform:"uppercase"
                 }}>
                   {emp.badge}
