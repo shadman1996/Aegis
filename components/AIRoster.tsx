@@ -4,11 +4,12 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import {
   MessageSquare, ShieldCheck, BarChart3, HeadphonesIcon,
-  Target, FileText, TrendingUp, Search, Bot, ChevronRight, Check,
+  Target, FileText, TrendingUp, Search, Bot, ChevronRight,
+  Check, Code2, Gavel, Phone,
 } from "lucide-react";
 
-// ── MVP Superteam (live / coming very soon) ───────────────────────
-const superteam = [
+// ── Complete AI Workforce — all current & planned modules ─────────
+const employees = [
   {
     id: "serea",
     name: "Serea",
@@ -18,8 +19,7 @@ const superteam = [
     color: "#63DCB8",
     available: true,
     badge: "Live Now",
-    description:
-      "Handles community engagement, content safety filtering, customer support, and real-time sentiment crisis monitoring across all your social channels — 24/7 without fatigue.",
+    description: "Handles community engagement, content safety filtering, customer support, and real-time sentiment crisis monitoring across all your social channels — 24/7 without fatigue.",
     skills: ["Community Engagement", "Content Safety", "Customer Support", "Sentiment Monitoring"],
     humanCost: "৳15,000–৳30,000 /mo",
     aiCost: "৳2,000 /mo",
@@ -34,8 +34,7 @@ const superteam = [
     color: "#7C6FF7",
     available: false,
     badge: "Coming Soon",
-    description:
-      "Monitors social signals and web data to surface 20+ ready-to-buy B2B leads daily — delivered straight to your CRM before your human team even starts their day.",
+    description: "Monitors social signals and web data to surface 20+ ready-to-buy B2B leads daily — delivered straight to your CRM before your human team even starts their day.",
     skills: ["Social Signal Monitoring", "B2B Lead Scoring", "CRM Sync", "Daily Lead Reports"],
     humanCost: "৳25,000–৳40,000 /mo",
     aiCost: "৳2,000 /mo",
@@ -50,8 +49,7 @@ const superteam = [
     color: "#F43F5E",
     available: false,
     badge: "Coming Soon",
-    description:
-      "A 24/7 WhatsApp/Web agent that qualifies inbound leads, answers FAQs, and books meetings directly into your CEO's calendar — zero manual follow-up required.",
+    description: "A 24/7 WhatsApp/Web agent that qualifies inbound leads, answers FAQs, and books meetings directly into your CEO's calendar — zero manual follow-up required.",
     skills: ["WhatsApp Integration", "Lead Qualification", "Calendar Booking", "24/7 Availability"],
     humanCost: "৳12,000–৳20,000 /mo",
     aiCost: "৳2,000 /mo",
@@ -66,8 +64,7 @@ const superteam = [
     color: "#F59E0B",
     available: false,
     badge: "Coming Soon",
-    description:
-      "Researches trending topics and generates a full month's worth of SEO-optimized blog posts, social captions, email sequences, and high-conversion ad copy — in your brand voice.",
+    description: "Researches trending topics and generates a full month's worth of SEO-optimized blog posts, social captions, email sequences, and high-conversion ad copy — in your brand voice.",
     skills: ["SEO Blog Posts", "Ad Copy", "Email Sequences", "Social Captions"],
     humanCost: "৳20,000–৳35,000 /mo",
     aiCost: "৳2,000 /mo",
@@ -82,8 +79,7 @@ const superteam = [
     color: "#10B981",
     available: false,
     badge: "Coming Soon",
-    description:
-      "Real-time monitoring of your Meta and Google Ads — automatically pauses low-performing creatives, reallocates budget to winners, and sends you daily performance briefs.",
+    description: "Real-time monitoring of your Meta and Google Ads — automatically pauses low-performing creatives, reallocates budget to winners, and sends you daily performance briefs.",
     skills: ["Meta Ads", "Google Ads", "Budget Optimization", "Daily Briefs"],
     humanCost: "৳30,000–৳50,000 /mo",
     aiCost: "৳2,000 /mo",
@@ -98,21 +94,87 @@ const superteam = [
     color: "#8B5CF6",
     available: false,
     badge: "Coming Soon",
-    description:
-      "Scans all client data weekly and auto-generates professional ROI reports in PDF and slide format — ready to send directly to your clients without any manual formatting.",
+    description: "Scans all client data weekly and auto-generates professional ROI reports in PDF and slide format — ready to send directly to your clients without any manual formatting.",
     skills: ["PDF Report Generation", "ROI Analysis", "Weekly Automation", "Slide Decks"],
-    humanCost: "Bundled analyst",
-    aiCost: "Included in bundle",
-    saving: "100%",
+    humanCost: "৳30,000–৳50,000 /mo",
+    aiCost: "৳2,000 /mo",
+    saving: "93%+",
   },
-];
-
-// ── Phase 2+ Future Roster ────────────────────────────────────────
-const future = [
-  { id: "rex", name: "Rex", role: "Security Analyst", icon: ShieldCheck, color: "#7C6FF7" },
-  { id: "oracle", name: "Oracle", role: "SEO Specialist", icon: Search, color: "#63DCB8" },
-  { id: "nova", name: "Nova", role: "Data Analyst", icon: BarChart3, color: "#F59E0B" },
-  { id: "aria", name: "Aria", role: "Voice Receptionist", icon: HeadphonesIcon, color: "#F43F5E" },
+  {
+    id: "rex",
+    name: "Rex",
+    role: "AI Security Analyst",
+    department: "Cybersecurity · Aegis Module",
+    icon: ShieldCheck,
+    color: "#7C6FF7",
+    available: false,
+    badge: "Aegis Module",
+    description: "Powered by the Aegis module — scans your infrastructure for vulnerabilities, generates plain-English remediation reports, and auto-fixes through a Zero-Breakage digital twin simulation. You pay nothing if the simulation fails.",
+    skills: ["Network Scanning", "AI Remediation", "Zero-Breakage Sim", "Compliance Reports"],
+    humanCost: "৳30,000–৳50,000 /mo",
+    aiCost: "Free to scan",
+    saving: "Credits to fix",
+  },
+  {
+    id: "oracle",
+    name: "Oracle",
+    role: "AI SEO Specialist",
+    department: "Search & Visibility",
+    icon: Search,
+    color: "#63DCB8",
+    available: false,
+    badge: "Coming Soon",
+    description: "Performs full technical SEO audits, builds keyword strategies, tracks rankings daily, and automatically fixes on-page issues — so your clients rank higher with zero manual effort.",
+    skills: ["Technical SEO Audits", "Keyword Research", "Rank Tracking", "On-Page Fixes"],
+    humanCost: "৳30,000–৳50,000 /mo",
+    aiCost: "৳2,000 /mo",
+    saving: "93%+",
+  },
+  {
+    id: "aria",
+    name: "Aria",
+    role: "AI Voice Receptionist",
+    department: "Front Desk",
+    icon: Phone,
+    color: "#F43F5E",
+    available: false,
+    badge: "Coming Soon",
+    description: "Answers every inbound call in your brand's voice — books appointments, filters spam, syncs your calendar, and sends SMS/email confirmations. Never on sick leave. Never misses a call.",
+    skills: ["Call Handling", "Appointment Booking", "Spam Filtering", "SMS/Email Alerts"],
+    humanCost: "৳15,000–৳25,000 /mo",
+    aiCost: "৳2,000 /mo",
+    saving: "87%+",
+  },
+  {
+    id: "kai",
+    name: "Kai",
+    role: "AI DevOps Engineer",
+    department: "Engineering",
+    icon: Code2,
+    color: "#F59E0B",
+    available: false,
+    badge: "Coming Soon",
+    description: "Monitors CI/CD pipelines, auto-rolls back failed deployments, optimizes Docker images, and generates infrastructure-as-code patches — so your dev team focuses on features, not fires.",
+    skills: ["CI/CD Monitoring", "Auto-Rollback", "Docker Optimization", "IaC Patches"],
+    humanCost: "৳50,000–৳80,000 /mo",
+    aiCost: "৳2,000 /mo",
+    saving: "96%+",
+  },
+  {
+    id: "sage",
+    name: "Sage",
+    role: "AI Legal Document Reviewer",
+    department: "Legal & Compliance",
+    icon: Gavel,
+    color: "#10B981",
+    available: false,
+    badge: "Coming Soon",
+    description: "Reviews contracts, NDAs, and compliance documents in minutes. Flags risky clauses, summarizes obligations, and compares against your internal templates — no lawyer on retainer needed.",
+    skills: ["Contract Review", "Risk Flagging", "Clause Comparison", "Compliance Checks"],
+    humanCost: "৳60,000–৳1,00,000 /mo",
+    aiCost: "৳2,000 /mo",
+    saving: "97%+",
+  },
 ];
 
 export default function AIRoster() {
@@ -123,24 +185,24 @@ export default function AIRoster() {
     <section id="roster" className="section-pad" ref={ref} style={{ background: "var(--bb-bg)" }}>
       <div style={{ maxWidth: 1260, margin: "0 auto" }}>
 
-        {/* ── Header ── */}
+        {/* Header */}
         <motion.div initial={{ opacity:0, y:30 }} animate={inView ? { opacity:1, y:0 } : {}}
           transition={{ duration:0.6 }} style={{ textAlign:"center", marginBottom:56 }}
         >
           <div style={{ display:"inline-flex", alignItems:"center", gap:8, padding:"4px 16px", borderRadius:999, background:"rgba(99,220,184,0.08)", border:"1px solid rgba(99,220,184,0.22)", marginBottom:20 }}>
             <Bot size={13} color="#63DCB8" />
             <span style={{ fontFamily:"'Inter', sans-serif", fontSize:"0.73rem", fontWeight:600, color:"#63DCB8", letterSpacing:"0.1em", textTransform:"uppercase" }}>
-              The AI Superteam — Job Portal
+              AI Workforce · Job Portal · {employees.length} Specialists
             </span>
           </div>
           <h2 style={{ fontFamily:"'Space Grotesk', sans-serif", fontSize:"clamp(2rem, 4.5vw, 3.2rem)", fontWeight:800, color:"#F1F5F9", letterSpacing:"-0.025em", marginBottom:16, lineHeight:1.12 }}>
-            5 Specialists. One Superteam.{" "}
+            Your Full AI Department.{" "}
             <span className="gradient-text-teal">Zero Salaries.</span>
           </h2>
-          <p style={{ fontFamily:"'Inter', sans-serif", color:"#64748B", fontSize:"1.05rem", maxWidth:640, margin:"0 auto", lineHeight:1.75 }}>
-            Replace an entire digital department. Each AI employee works{" "}
-            <strong style={{ color:"#E2E8F0" }}>168 hours/week</strong> at a fraction of the cost —
-            no hiring delays, no sick days, no turnover.
+          <p style={{ fontFamily:"'Inter', sans-serif", color:"#64748B", fontSize:"1.05rem", maxWidth:660, margin:"0 auto", lineHeight:1.75 }}>
+            Every role your business needs — from social media to cybersecurity to legal.
+            Each AI employee works <strong style={{ color:"#E2E8F0" }}>168 hours/week</strong> at a fraction of the human cost.
+            New employees added every quarter.
           </p>
 
           {/* Tier legend */}
@@ -159,19 +221,28 @@ export default function AIRoster() {
           </div>
         </motion.div>
 
-        {/* ── Employee Cards ── */}
-        <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fill, minmax(360px, 1fr))", gap:24, marginBottom:80 }}>
-          {superteam.map((emp, i) => {
+        {/* Employee Grid */}
+        <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fill, minmax(340px, 1fr))", gap:24, marginBottom:80 }}>
+          {employees.map((emp, i) => {
             const Icon = emp.icon;
+            const isAegis = emp.id === "rex";
             return (
               <motion.div key={emp.id} id={`employee-${emp.id}`}
                 initial={{ opacity:0, y:40 }} animate={inView ? { opacity:1, y:0 } : {}}
-                transition={{ duration:0.55, delay:0.1 + i * 0.07 }}
+                transition={{ duration:0.55, delay:0.05 + i * 0.05 }}
                 className="glass employee-card border-animate"
-                style={{ borderRadius:20, padding:"28px", position:"relative", opacity: emp.available ? 1 : 0.78 }}
+                style={{ borderRadius:20, padding:"28px", position:"relative", opacity: emp.available ? 1 : 0.8,
+                  ...(isAegis ? { border:"1px solid rgba(124,111,247,0.3)", boxShadow:"0 0 30px rgba(124,111,247,0.1)" } : {})
+                }}
               >
                 {/* Badge */}
-                <div style={{ position:"absolute", top:18, right:18, padding:"3px 10px", borderRadius:999, background: emp.available ? "rgba(16,185,129,0.12)" : "rgba(100,116,139,0.12)", border: emp.available ? "1px solid rgba(16,185,129,0.3)" : "1px solid rgba(100,116,139,0.22)", fontFamily:"'Inter', sans-serif", fontSize:"0.65rem", fontWeight:700, color: emp.available ? "#10B981" : "#64748B", letterSpacing:"0.07em", textTransform:"uppercase" }}>
+                <div style={{ position:"absolute", top:18, right:18, padding:"3px 10px", borderRadius:999,
+                  background: emp.available ? "rgba(16,185,129,0.12)" : isAegis ? "rgba(124,111,247,0.15)" : "rgba(100,116,139,0.12)",
+                  border: emp.available ? "1px solid rgba(16,185,129,0.3)" : isAegis ? "1px solid rgba(124,111,247,0.35)" : "1px solid rgba(100,116,139,0.22)",
+                  fontFamily:"'Inter', sans-serif", fontSize:"0.65rem", fontWeight:700,
+                  color: emp.available ? "#10B981" : isAegis ? "#7C6FF7" : "#64748B",
+                  letterSpacing:"0.07em", textTransform:"uppercase"
+                }}>
                   {emp.badge}
                 </div>
 
@@ -205,25 +276,28 @@ export default function AIRoster() {
                   ))}
                 </div>
 
-                {/* Savings pill */}
+                {/* Cost comparison */}
                 <div style={{ display:"flex", gap:10, marginBottom:18, flexWrap:"wrap" }}>
                   <div style={{ padding:"7px 12px", borderRadius:8, background:"rgba(239,68,68,0.08)", border:"1px solid rgba(239,68,68,0.18)", fontFamily:"'Inter', sans-serif", fontSize:"0.74rem", color:"#94A3B8" }}>
                     👤 Human: <span style={{ color:"#EF4444", fontWeight:600, textDecoration:"line-through" }}>{emp.humanCost}</span>
                   </div>
                   <div style={{ padding:"7px 12px", borderRadius:8, background:"rgba(16,185,129,0.08)", border:"1px solid rgba(16,185,129,0.2)", fontFamily:"'Inter', sans-serif", fontSize:"0.74rem", color:"#94A3B8" }}>
                     🤖 AI: <span style={{ color:"#10B981", fontWeight:700 }}>{emp.aiCost}</span>
-                    <span style={{ color:"#10B981", fontWeight:700, marginLeft:6 }}>Save {emp.saving}</span>
+                    {emp.saving !== "Credits to fix" && <span style={{ color:"#10B981", fontWeight:700, marginLeft:6 }}>· Save {emp.saving}</span>}
                   </div>
                 </div>
 
-                {/* CTA */}
+                {/* CTA footer */}
                 <div style={{ display:"flex", alignItems:"center", justifyContent:"space-between", paddingTop:16, borderTop:"1px solid rgba(99,220,184,0.08)" }}>
-                  <div style={{ fontFamily:"'Inter', sans-serif", fontSize:"0.75rem", color:"#475569" }}>
-                    Entry → Mid → Senior tiers
-                  </div>
+                  <div style={{ fontFamily:"'Inter', sans-serif", fontSize:"0.75rem", color:"#475569" }}>Entry → Mid → Senior</div>
                   <motion.a href={emp.available ? "#pricing" : "#"}
                     whileHover={emp.available ? { scale:1.05 } : {}} whileTap={emp.available ? { scale:0.97 } : {}}
-                    style={{ display:"inline-flex", alignItems:"center", gap:6, padding:"10px 18px", borderRadius:10, fontFamily:"'Space Grotesk', sans-serif", fontWeight:700, fontSize:"0.84rem", textDecoration:"none", background: emp.available ? `linear-gradient(135deg, ${emp.color}, #7C6FF7)` : "rgba(100,116,139,0.12)", color: emp.available ? "#04080F" : "#475569", cursor: emp.available ? "pointer" : "not-allowed", border: emp.available ? "none" : "1px solid rgba(100,116,139,0.18)" }}
+                    style={{ display:"inline-flex", alignItems:"center", gap:6, padding:"10px 18px", borderRadius:10, fontFamily:"'Space Grotesk', sans-serif", fontWeight:700, fontSize:"0.84rem", textDecoration:"none",
+                      background: emp.available ? `linear-gradient(135deg, ${emp.color}, #7C6FF7)` : "rgba(100,116,139,0.12)",
+                      color: emp.available ? "#04080F" : "#475569",
+                      cursor: emp.available ? "pointer" : "not-allowed",
+                      border: emp.available ? "none" : "1px solid rgba(100,116,139,0.18)"
+                    }}
                   >
                     {emp.available ? "Hire Now" : "Notify Me"}
                     <ChevronRight size={15} />
@@ -234,9 +308,9 @@ export default function AIRoster() {
           })}
         </div>
 
-        {/* ── Savings comparison table ── */}
-        <motion.div initial={{ opacity:0, y:30 }} animate={inView ? { opacity:1, y:0 } : {}} transition={{ delay:0.6 }}
-          style={{ borderRadius:20, padding:"36px", background:"rgba(9,14,26,0.8)", border:"1px solid rgba(99,220,184,0.14)", marginBottom:56 }}
+        {/* Savings comparison table */}
+        <motion.div initial={{ opacity:0, y:30 }} animate={inView ? { opacity:1, y:0 } : {}} transition={{ delay:0.5 }}
+          style={{ borderRadius:20, padding:"36px", background:"rgba(9,14,26,0.8)", border:"1px solid rgba(99,220,184,0.14)", marginBottom:48 }}
         >
           <div style={{ textAlign:"center", marginBottom:28 }}>
             <h3 style={{ fontFamily:"'Space Grotesk', sans-serif", fontWeight:800, fontSize:"1.5rem", color:"#F1F5F9", marginBottom:8 }}>
@@ -273,7 +347,7 @@ export default function AIRoster() {
                   </tr>
                 ))}
                 <tr style={{ background:"rgba(99,220,184,0.06)", borderTop:"2px solid rgba(99,220,184,0.2)" }}>
-                  <td style={{ padding:"16px", fontFamily:"'Space Grotesk', sans-serif", fontWeight:800, color:"#F1F5F9" }}>TOTAL (5 Employees)</td>
+                  <td style={{ padding:"16px", fontFamily:"'Space Grotesk', sans-serif", fontWeight:800, color:"#F1F5F9" }}>TOTAL (5-Agent Bundle)</td>
                   <td style={{ padding:"16px", color:"#EF4444", fontWeight:700, textDecoration:"line-through" }}>৳1,02,000–৳1,75,000</td>
                   <td style={{ padding:"16px", color:"#10B981", fontWeight:800, fontSize:"1rem" }}>৳10,000</td>
                   <td style={{ padding:"16px" }}>
@@ -285,38 +359,12 @@ export default function AIRoster() {
           </div>
         </motion.div>
 
-        {/* ── Future roster teaser ── */}
-        <motion.div initial={{ opacity:0, y:20 }} animate={inView ? { opacity:1, y:0 } : {}} transition={{ delay:0.75 }}>
-          <div style={{ textAlign:"center", marginBottom:24 }}>
-            <div style={{ fontFamily:"'Space Grotesk', sans-serif", fontWeight:700, fontSize:"1rem", color:"#94A3B8", marginBottom:6 }}>
-              Phase 2+ Roster — Growing every quarter
-            </div>
-          </div>
-          <div style={{ display:"flex", flexWrap:"wrap", gap:14, justifyContent:"center", marginBottom:40 }}>
-            {future.map((f) => {
-              const Icon = f.icon;
-              return (
-                <div key={f.id} style={{ display:"flex", alignItems:"center", gap:10, padding:"10px 18px", borderRadius:12, background:"rgba(9,14,26,0.7)", border:"1px solid rgba(99,220,184,0.1)" }}>
-                  <div style={{ width:30, height:30, borderRadius:8, background:`${f.color}12`, display:"flex", alignItems:"center", justifyContent:"center" }}>
-                    <Icon size={15} color={f.color} />
-                  </div>
-                  <div>
-                    <div style={{ fontFamily:"'Space Grotesk', sans-serif", fontSize:"0.85rem", fontWeight:700, color:"#E2E8F0" }}>{f.name}</div>
-                    <div style={{ fontFamily:"'Inter', sans-serif", fontSize:"0.72rem", color:"#475569" }}>{f.role}</div>
-                  </div>
-                  <span style={{ fontSize:"0.65rem", padding:"2px 8px", borderRadius:999, background:"rgba(100,116,139,0.15)", color:"#64748B", fontWeight:600 }}>Soon</span>
-                </div>
-              );
-            })}
-          </div>
-        </motion.div>
-
-        <motion.p initial={{ opacity:0 }} animate={inView ? { opacity:1 } : {}} transition={{ delay:0.9 }}
+        <motion.p initial={{ opacity:0 }} animate={inView ? { opacity:1 } : {}} transition={{ delay:0.8 }}
           style={{ textAlign:"center", fontFamily:"'Inter', sans-serif", fontSize:"0.87rem", color:"#475569", lineHeight:1.7 }}
         >
-          ✦ Bundle all 5 agents for <strong style={{ color:"#63DCB8" }}>৳25,000/mo</strong> — saving you over ৳1.5 Lakh every month.
+          ✦ Bundle all 5 core agents for <strong style={{ color:"#63DCB8" }}>৳25,000/mo</strong> — saving you over ৳1.5 Lakh every month.
           &nbsp;·&nbsp; Powered by <strong style={{ color:"#7C6FF7" }}>n8n multi-step AI workflows</strong>.
-          &nbsp;·&nbsp; One dashboard. Zero HR.
+          &nbsp;·&nbsp; New employees added every quarter.
         </motion.p>
       </div>
     </section>
