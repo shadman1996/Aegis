@@ -2,13 +2,13 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Shield, Menu, X, Zap } from "lucide-react";
+import { Users, Menu, X, Sparkles } from "lucide-react";
 
 const navLinks = [
+  { label: "AI Roster",   href: "#roster" },
   { label: "How It Works", href: "#how-it-works" },
-  { label: "Zero-Breakage", href: "#zero-breakage" },
-  { label: "SOC Team", href: "#soc-team" },
-  { label: "Pricing", href: "#pricing" },
+  { label: "Pricing",     href: "#pricing" },
+  { label: "About",       href: "#about" },
 ];
 
 export default function Navbar() {
@@ -35,12 +35,10 @@ export default function Navbar() {
           zIndex: 1000,
           padding: "0 24px",
           transition: "all 0.3s ease",
-          background: scrolled
-            ? "rgba(5, 10, 20, 0.9)"
-            : "transparent",
+          background: scrolled ? "rgba(4, 8, 15, 0.92)" : "transparent",
           backdropFilter: scrolled ? "blur(20px)" : "none",
           borderBottom: scrolled
-            ? "1px solid rgba(0,216,255,0.1)"
+            ? "1px solid rgba(99,220,184,0.12)"
             : "1px solid transparent",
         }}
       >
@@ -55,54 +53,39 @@ export default function Navbar() {
           }}
         >
           {/* Logo */}
-          <a
-            href="#"
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: 10,
-              textDecoration: "none",
-            }}
-          >
+          <a href="#" style={{ display: "flex", alignItems: "center", gap: 10, textDecoration: "none" }}>
             <motion.div
-              whileHover={{ rotate: 15, scale: 1.1 }}
+              whileHover={{ rotate: 10, scale: 1.1 }}
               style={{
                 width: 38,
                 height: 38,
                 borderRadius: 10,
-                background: "linear-gradient(135deg, #00D8FF, #8B5CF6)",
+                background: "linear-gradient(135deg, #63DCB8, #7C6FF7)",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
               }}
             >
-              <Shield size={20} color="#050A14" strokeWidth={2.5} />
+              <Users size={20} color="#04080F" strokeWidth={2.5} />
             </motion.div>
             <span
               style={{
                 fontFamily: "'Space Grotesk', sans-serif",
                 fontWeight: 800,
                 fontSize: "1.35rem",
-                background: "linear-gradient(135deg, #00D8FF, #8B5CF6)",
+                background: "linear-gradient(135deg, #63DCB8, #7C6FF7)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
                 letterSpacing: "-0.02em",
               }}
             >
-              AEGIS
+              Bengal Bound
             </span>
           </a>
 
-          {/* Desktop Nav Links */}
-          <div
-            style={{
-              display: "flex",
-              gap: 36,
-              alignItems: "center",
-            }}
-            className="hidden-mobile"
-          >
+          {/* Desktop Nav */}
+          <div style={{ display: "flex", gap: 36, alignItems: "center" }} className="hidden-mobile">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -114,44 +97,32 @@ export default function Navbar() {
                   fontWeight: 500,
                   fontSize: "0.9rem",
                   transition: "color 0.2s ease",
-                  letterSpacing: "0.01em",
                 }}
-                onMouseEnter={(e) =>
-                  ((e.target as HTMLElement).style.color = "#00D8FF")
-                }
-                onMouseLeave={(e) =>
-                  ((e.target as HTMLElement).style.color = "#94A3B8")
-                }
+                onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "#63DCB8")}
+                onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "#94A3B8")}
               >
                 {link.label}
               </a>
             ))}
           </div>
 
-          {/* CTA + Mobile Menu */}
+          {/* CTA + Mobile */}
           <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
             <motion.a
-              href="#pricing"
+              href="#roster"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.97 }}
               className="btn-primary hidden-mobile"
-              style={{ fontSize: "0.875rem", padding: "10px 24px" }}
+              style={{ fontSize: "0.875rem", padding: "10px 22px" }}
             >
-              <Zap size={16} />
-              Free Scan
+              <Sparkles size={15} />
+              Browse AI Employees
             </motion.a>
 
-            {/* Mobile hamburger */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
               className="show-mobile"
-              style={{
-                background: "none",
-                border: "none",
-                cursor: "pointer",
-                color: "#00D8FF",
-                padding: 4,
-              }}
+              style={{ background: "none", border: "none", cursor: "pointer", color: "#63DCB8", padding: 4 }}
               aria-label="Toggle menu"
             >
               {mobileOpen ? <X size={24} /> : <Menu size={24} />}
@@ -160,7 +131,7 @@ export default function Navbar() {
         </div>
       </motion.nav>
 
-      {/* Mobile Menu Drawer */}
+      {/* Mobile Drawer */}
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
@@ -173,9 +144,9 @@ export default function Navbar() {
               left: 0,
               right: 0,
               zIndex: 999,
-              background: "rgba(5, 10, 20, 0.97)",
+              background: "rgba(4, 8, 15, 0.97)",
               backdropFilter: "blur(20px)",
-              borderBottom: "1px solid rgba(0,216,255,0.15)",
+              borderBottom: "1px solid rgba(99,220,184,0.15)",
               padding: "24px",
               display: "flex",
               flexDirection: "column",
@@ -198,9 +169,9 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
-            <a href="#pricing" className="btn-primary" style={{ textAlign: "center", justifyContent: "center" }}>
-              <Zap size={16} />
-              Run Free Security Scan
+            <a href="#roster" className="btn-primary" style={{ textAlign: "center", justifyContent: "center" }}>
+              <Sparkles size={15} />
+              Browse AI Employees
             </a>
           </motion.div>
         )}
@@ -209,10 +180,10 @@ export default function Navbar() {
       <style>{`
         @media (max-width: 768px) {
           .hidden-mobile { display: none !important; }
-          .show-mobile { display: block !important; }
+          .show-mobile   { display: block !important; }
         }
         @media (min-width: 769px) {
-          .show-mobile { display: none !important; }
+          .show-mobile   { display: none !important; }
           .hidden-mobile { display: flex !important; }
         }
       `}</style>

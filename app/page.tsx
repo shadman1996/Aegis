@@ -1,8 +1,8 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import EcosystemSection from "@/components/EcosystemSection";
+import AIRoster from "@/components/AIRoster";
 import HowItWorks from "@/components/HowItWorks";
-import ZeroBreakage from "@/components/ZeroBreakage";
-import SOCBacking from "@/components/SOCBacking";
 import PricingSection from "@/components/PricingSection";
 import Footer from "@/components/Footer";
 
@@ -11,9 +11,9 @@ export default function Home() {
     <main>
       <Navbar />
       <HeroSection />
+      <EcosystemSection />
+      <AIRoster />
       <HowItWorks />
-      <ZeroBreakage />
-      <SOCBacking />
       <PricingSection />
       <Footer />
     </main>

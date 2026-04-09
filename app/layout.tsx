@@ -2,15 +2,15 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Aegis — Enterprise Security. Zero Breakage. One Click.",
+  title: "Bengal Bound — Hire Your AI Workforce",
   description:
-    "Aegis is the AI-powered cyber remediation platform that automatically fixes your vulnerabilities without breaking your systems. Free scanner, AI credits, 24/7 human SOC backing.",
+    "Bengal Bound is the AI staffing platform where businesses hire intelligent AI employees — from security analysts to voice receptionists — with no salary, no headcount, and instant deployment.",
   keywords:
-    "cybersecurity, AI remediation, vulnerability scanner, zero breakage, SOC, enterprise security",
+    "AI employees, AI workforce, hire AI, AI receptionist, AI security analyst, SaaS, Bengal Bound",
   openGraph: {
-    title: "Aegis — Enterprise Security. Zero Breakage. One Click.",
+    title: "Bengal Bound — Hire Your AI Workforce",
     description:
-      "AI-powered cyber remediation. Free scanner. One-click fixes. Zero breakage guaranteed.",
+      "Skip the hiring process. Hire AI employees instantly. Subscribe monthly or pay per task.",
     type: "website",
   },
 };
