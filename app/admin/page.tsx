@@ -1,10 +1,10 @@
-import AdminDashboard from "@/components/admin/AdminDashboard";
+import AdminLogin from "@/components/admin/AdminLogin";
 
 export const metadata = {
-  title: "Aegis Admin — Dashboard",
-  description: "Internal admin panel for Aegis platform operations.",
+  title: "Aegis Admin — Sign In",
+  description: "Restricted access. Aegis staff only.",
 };
 
-export default function AdminPage() {
-  return <AdminDashboard />;
+export default function AdminLoginPage() {
+  return <AdminLogin />;
 }

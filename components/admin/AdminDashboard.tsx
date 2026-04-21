@@ -1,13 +1,16 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import {
-  Shield, Users, Zap, AlertTriangle, TrendingUp, Activity,
-  Clock, CheckCircle2, XCircle, MoreHorizontal, Search,
+  Shield, Users, Zap, TrendingUp, Activity,
+  Clock, CheckCircle2, XCircle,
   Bell, Settings, ChevronUp, ChevronDown, Eye, Download,
   Globe, CreditCard, HeartHandshake, RefreshCw, LogOut
 } from "lucide-react";
+
+const SESSION_KEY = "aegis_admin_session";
 
 // ─── Mock Data ──────────────────────────────────────────────────
 const kpis = [
@@ -75,7 +78,13 @@ const statusColor: Record<string, string> = {
 
 // ─── Admin Dashboard ────────────────────────────────────────────
 export default function AdminDashboard() {
+  const router = useRouter();
   const [activeTab, setActiveTab] = useState<"overview" | "soc" | "remediation">("overview");
+
+  const handleSignOut = () => {
+    localStorage.removeItem(SESSION_KEY);
+    router.replace("/admin");
+  };
 
   return (
     <div style={{ minHeight: "100vh", background: "#030710", color: "#E2E8F0", fontFamily: "'Inter', sans-serif" }}>
@@ -124,7 +133,7 @@ export default function AdminDashboard() {
             <Settings size={16} />
           </button>
           <div style={{ width: 1, height: 24, background: "rgba(255,255,255,0.08)" }} />
-          <button style={{ background: "none", border: "none", cursor: "pointer", color: "#EF4444", padding: 4,
+          <button onClick={handleSignOut} style={{ background: "none", border: "none", cursor: "pointer", color: "#EF4444", padding: 4,
             display: "flex", alignItems: "center", gap: 6, fontSize: "0.8rem" }} aria-label="Logout">
             <LogOut size={14} /> Sign Out
           </button>
