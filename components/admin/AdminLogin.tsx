@@ -5,10 +5,11 @@ import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { Shield, Mail, Lock, Eye, EyeOff, AlertCircle, Loader2 } from "lucide-react";
 
-// ─── MVP credentials (replace with Supabase auth in Phase 2) ───
+// ─── MVP fallback credentials (used when backend is unavailable) ───
 const ADMIN_EMAIL    = "admin@aegis.io";
 const ADMIN_PASSWORD = "Aegis@2026";
 const SESSION_KEY    = "aegis_admin_session";
+const API_BASE       = "http://localhost:8000";
 
 export default function AdminLogin() {
   const router = useRouter();
@@ -30,9 +31,47 @@ export default function AdminLogin() {
     setError("");
     setLoading(true);
 
-    // Simulate a brief network delay for realism
-    await new Promise((r) => setTimeout(r, 900));
+    // Try backend API auth first
+    try {
+      const form = new URLSearchParams();
+      form.set("username", email.trim().toLowerCase());
+      form.set("password", password);
+      const res = await fetch(`${API_BASE}/auth/login`, {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: form.toString(),
+      });
+      if (res.ok) {
+        const data = await res.json();
+        // Check admin flag via /auth/me
+        const meRes = await fetch(`${API_BASE}/auth/me`, {
+          headers: { "Authorization": `Bearer ${data.access_token}` },
+        });
+        if (meRes.ok) {
+          const me = await meRes.json();
+          if (me.is_admin) {
+            localStorage.setItem(SESSION_KEY, JSON.stringify({
+              email: me.email,
+              role: "superadmin",
+              loginAt: new Date().toISOString(),
+              token: data.access_token,
+            }));
+            localStorage.setItem("aegis_token", data.access_token);
+            router.replace("/admin/dashboard");
+            return;
+          } else {
+            setError("You do not have admin privileges.");
+            setLoading(false);
+            return;
+          }
+        }
+      }
+    } catch {
+      // API unavailable — fall through to hardcoded check
+    }
 
+    // Fallback: hardcoded MVP credentials
+    await new Promise((r) => setTimeout(r, 400));
     if (
       email.trim().toLowerCase() === ADMIN_EMAIL &&
       password === ADMIN_PASSWORD

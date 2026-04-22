@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { ClientProviders } from "@/components/ClientProviders";
 
 export const metadata: Metadata = {
   title: "Aegis — Enterprise Security. Zero Breakage. One Click.",
@@ -34,7 +35,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        <ClientProviders>{children}</ClientProviders>
+      </body>
     </html>
   );
 }
+
