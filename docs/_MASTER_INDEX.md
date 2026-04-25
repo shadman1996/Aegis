@@ -59,6 +59,16 @@
 |---|---|---|
 | [MARKETING_KIT.md](./marketing/MARKETING_KIT.md) | Go-to-market, content, channels | Marketing |
 
+### 📁 docs/ai/
+| File | Purpose | Audience |
+|---|---|---|
+| [AI_STRATEGY.md](./ai/AI_STRATEGY.md) | AI provider strategy, guidelines, fail-closed ops | AI Engineers, CTO |
+
+### 📁 docs/antigravity/
+| File | Purpose | Audience |
+|---|---|---|
+| [ANTIGRAVITY_INSTRUCTIONS.md](./antigravity/ANTIGRAVITY_INSTRUCTIONS.md) | Rules and historical context for the AI dev assistant | Antigravity, CTO |
+
 ### 📁 docs/architecture/
 | File | Purpose | Audience |
 |---|---|---|
