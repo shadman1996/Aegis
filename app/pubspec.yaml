@@ -1,0 +1,90 @@
+name: flutter_app
+description: Nexara — AI Employee Manager (Android, iOS, macOS, Windows, Linux)
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+  flutter: '>=3.22.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # API & Networking
+  dio: ^5.4.3
+  retrofit: ^4.1.0
+  pretty_dio_logger: ^1.4.0
+
+  # Firebase / Auth
+  firebase_core: ^2.32.0
+  firebase_auth: ^4.19.6
+  firebase_messaging: ^14.9.4
+  google_sign_in: ^6.2.1
+
+  # Biometric Auth
+  local_auth: ^2.2.0
+  flutter_secure_storage: ^9.0.0
+
+  # Notifications
+  flutter_local_notifications: ^17.2.3
+
+  # State Management
+  flutter_riverpod: ^2.5.1
+  riverpod: ^2.5.1
+  riverpod_annotation: ^2.3.5
+
+  # Real-time
+  web_socket_channel: ^3.0.1
+
+  # UI & Charts
+  fl_chart: ^0.68.0
+  shimmer: ^3.0.0
+  cached_network_image: ^3.3.1
+  flutter_svg: ^2.0.10+1
+  lottie: ^3.1.2
+
+  # Storage
+  shared_preferences: ^2.3.2
+
+  # Utils
+  intl: ^0.19.0
+  timeago: ^3.7.0
+  url_launcher: ^6.3.0
+  share_plus: ^9.0.0
+  open_file: ^3.3.2
+  package_info_plus: ^8.1.2
+  uuid: ^4.4.2
+  crypto: ^3.0.3
+  connectivity_plus: ^6.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.9
+  retrofit_generator: ^8.1.0
+  riverpod_generator: ^2.4.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+  fonts:
+    - family: SpaceGrotesk
+      fonts:
+        - asset: assets/fonts/SpaceGrotesk-Regular.ttf
+        - asset: assets/fonts/SpaceGrotesk-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/SpaceGrotesk-ExtraBold.ttf
+          weight: 800
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+        - asset: assets/fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700
