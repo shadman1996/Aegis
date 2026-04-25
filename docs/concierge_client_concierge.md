@@ -1,7 +1,7 @@
 # Module Requirements: Concierge — AI Client Concierge
-# Bengal Bound Integration
+# Nexara Integration
 
-> **Prepared for:** Bengal Bound | **Date:** April 2026 | **Version:** 1.0
+> **Prepared for:** Nexara | **Date:** April 2026 | **Version:** 1.0
 > 🔧 Django + DRF — `concierge` app | 🤖 Gemini 1.5 Flash | ☁️ Google Cloud Run
 > 🔗 WhatsApp Business API, Google Calendar, HubSpot, web chat widget
 
@@ -139,4 +139,4 @@ pip install google-generativeai google-api-python-client google-auth django-apsc
 | Senior | ৳10,000 | Unlimited | Multi-channel, A/B scripts, revenue tracking |
 
 ---
-*Bengal Bound / NeurolinkIT*
+*Nexara / NeurolinkIT*

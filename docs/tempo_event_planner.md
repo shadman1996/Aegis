@@ -1,7 +1,7 @@
 # Module Requirements: Tempo — AI Event Planner & Coordinator
-# Bengal Bound Integration
+# Nexara Integration
 
-> **Prepared for:** Bengal Bound | **Date:** April 2026 | **Version:** 1.0
+> **Prepared for:** Nexara | **Date:** April 2026 | **Version:** 1.0
 > 🔧 Django + DRF — `tempo` app | 🤖 Gemini 1.5 Flash | ☁️ Google Cloud Run
 
 ---
@@ -120,4 +120,4 @@ pip install google-generativeai reportlab google-api-python-client django-apsche
 | Mid | ৳5,000 | 8 | Budget tracker, run-of-show, calendar |
 | Senior | ৳10,000 | Unlimited | Post-event reports, full coordination |
 
-*Bengal Bound / NeurolinkIT*
+*Nexara / NeurolinkIT*

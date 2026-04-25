@@ -1,7 +1,7 @@
 # Module Requirements: Dox — AI Technical Writer
-# Bengal Bound Integration
+# Nexara Integration
 
-> **Prepared for:** Bengal Bound | **Date:** April 2026 | **Version:** 1.0
+> **Prepared for:** Nexara | **Date:** April 2026 | **Version:** 1.0
 > 🔧 Django + DRF — `dox` app | 🤖 Gemini 1.5 Flash | ☁️ Google Cloud Run
 
 ---
@@ -106,4 +106,4 @@ pip install google-generativeai PyGithub python-markdown mistune django-apschedu
 | Mid | ৳5,000 | 200 | Code comments, wiki, search |
 | Senior | ৳10,000 | Unlimited | All types + doc health monitor |
 
-*Bengal Bound / NeurolinkIT*
+*Nexara / NeurolinkIT*

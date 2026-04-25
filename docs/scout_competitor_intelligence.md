@@ -1,7 +1,7 @@
 # Module Requirements: Scout — AI Competitor Intelligence Analyst
-# Bengal Bound Integration
+# Nexara Integration
 
-> **Prepared for:** Bengal Bound | **Date:** April 2026 | **Version:** 1.0
+> **Prepared for:** Nexara | **Date:** April 2026 | **Version:** 1.0
 > 🔧 Django + DRF — `scout` app | 🤖 Gemini 1.5 Flash | ☁️ Google Cloud Run
 
 ---
@@ -102,4 +102,4 @@ pip install google-generativeai requests beautifulsoup4 scrapy reportlab django-
 | Mid | ৳5,000 | 15 | Ad intelligence, job signals |
 | Senior | ৳10,000 | Unlimited | Share of voice, full dashboard |
 
-*Bengal Bound / NeurolinkIT*
+*Nexara / NeurolinkIT*

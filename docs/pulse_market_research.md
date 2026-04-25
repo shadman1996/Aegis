@@ -1,7 +1,7 @@
 # Module Requirements: Pulse — AI Market Research Analyst
-# Bengal Bound Integration
+# Nexara Integration
 
-> **Prepared for:** Bengal Bound | **Date:** April 2026 | **Version:** 1.0
+> **Prepared for:** Nexara | **Date:** April 2026 | **Version:** 1.0
 > 🔧 Django + DRF — `pulse` app | 🤖 Gemini 1.5 Flash | ☁️ Google Cloud Run
 > 🔗 Google Trends, Reddit API, Twitter/X API, News APIs
 
@@ -104,4 +104,4 @@ pip install google-generativeai pytrends praw tweepy newsapi-python reportlab
 | Mid | ৳5,000 | Survey builder, opportunity reports |
 | Senior | ৳10,000 | Real-time alerts, market sizing, all sources |
 
-*Bengal Bound / NeurolinkIT*
+*Nexara / NeurolinkIT*

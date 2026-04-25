@@ -1,7 +1,7 @@
 # Module Requirements: Babel — AI Translation Specialist
-# Bengal Bound Integration
+# Nexara Integration
 
-> **Prepared for:** Bengal Bound | **Date:** April 2026 | **Version:** 1.0
+> **Prepared for:** Nexara | **Date:** April 2026 | **Version:** 1.0
 > 🔧 Django + DRF — `babel` app | 🤖 Gemini 1.5 Flash | ☁️ Google Cloud Run
 > 🔗 Google Cloud Translation API, DeepL API, WordPress REST API, file processing
 
@@ -147,4 +147,4 @@ pip install google-generativeai google-cloud-translate deepl pdfplumber python-d
 | Senior | ৳10,000 | Unlimited | All languages, website localization, brand voice |
 
 ---
-*Bengal Bound / NeurolinkIT*
+*Nexara / NeurolinkIT*

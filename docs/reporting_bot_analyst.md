@@ -1,7 +1,7 @@
 # Module Requirements: Reporting Bot — AI Analyst & Reporter
-# Bengal Bound Integration
+# Nexara Integration
 
-> **Prepared for:** Bengal Bound | **Date:** April 2026 | **Version:** 1.0
+> **Prepared for:** Nexara | **Date:** April 2026 | **Version:** 1.0
 > 🔧 Django + DRF — `reporting_bot` app | 🤖 Gemini 1.5 Flash | ☁️ Google Cloud Run
 > 🔗 Google Analytics API, Meta Insights API, HubSpot, Shopify — any data source
 
@@ -143,4 +143,4 @@ pip install google-generativeai google-analytics-data reportlab matplotlib pytho
 | Senior | ৳10,000 | Unlimited | All | White-label, custom KPI builder, open tracking |
 
 ---
-*Bengal Bound / NeurolinkIT*
+*Nexara / NeurolinkIT*

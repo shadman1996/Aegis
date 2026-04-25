@@ -1,7 +1,7 @@
 # Module Requirements: Cash — AI Payroll Processor
-# Bengal Bound Integration
+# Nexara Integration
 
-> **Prepared for:** Bengal Bound | **Date:** April 2026 | **Version:** 1.0
+> **Prepared for:** Nexara | **Date:** April 2026 | **Version:** 1.0
 > 🔧 Django + DRF — `cash` app | 🤖 Gemini 1.5 Flash | ☁️ Google Cloud Run
 
 ---
@@ -105,4 +105,4 @@ pip install google-generativeai reportlab django-apscheduler requests
 | Mid | ৳5,000 | 100 | Mobile wallet, leave integration |
 | Senior | ৳10,000 | Unlimited | Full compliance, audit trail |
 
-*Bengal Bound / NeurolinkIT*
+*Nexara / NeurolinkIT*

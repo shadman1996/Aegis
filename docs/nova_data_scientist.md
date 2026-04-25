@@ -1,7 +1,7 @@
 # Module Requirements: Nova — AI Data Scientist & BI Analyst
-# Bengal Bound Integration
+# Nexara Integration
 
-> **Prepared for:** Bengal Bound | **Date:** April 2026 | **Version:** 1.0
+> **Prepared for:** Nexara | **Date:** April 2026 | **Version:** 1.0
 > 🔧 Django + DRF — `nova` app | 🤖 Gemini 1.5 Flash | ☁️ Google Cloud Run
 > 🔗 Google BigQuery, PostgreSQL, MySQL, Shopify, HubSpot, REST data sources
 
@@ -129,4 +129,4 @@ pip install google-generativeai sqlalchemy psycopg2-binary prophet plotly gsprea
 | Senior | ৳10,000 | Unlimited | A/B testing, dashboard builder, all sources |
 
 ---
-*Bengal Bound / NeurolinkIT*
+*Nexara / NeurolinkIT*

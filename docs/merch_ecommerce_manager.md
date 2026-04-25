@@ -1,7 +1,7 @@
 # Module Requirements: Merch — AI E-commerce Manager
-# Bengal Bound Integration
+# Nexara Integration
 
-> **Prepared for:** Bengal Bound | **Date:** April 2026 | **Version:** 1.0
+> **Prepared for:** Nexara | **Date:** April 2026 | **Version:** 1.0
 > 🔧 Django + DRF — `merch` app | 🤖 Gemini 1.5 Flash | ☁️ Google Cloud Run
 > 🔗 Shopify API, WooCommerce REST API, Daraz Seller API, Facebook Shops, inventory webhooks
 
@@ -145,4 +145,4 @@ pip install google-generativeai ShopifyAPI woocommerce requests django-apschedul
 | Senior | ৳10,000 | Unlimited | Multi-store, Daraz, review automation |
 
 ---
-*Bengal Bound / NeurolinkIT*
+*Nexara / NeurolinkIT*

@@ -1,7 +1,7 @@
 # Module Requirements: Veritas — AI Client Onboarding & KYB Verification
-# Bengal Bound Integration
+# Nexara Integration
 
-> **Prepared for:** Bengal Bound | **Date:** April 2026 | **Version:** 1.0
+> **Prepared for:** Nexara | **Date:** April 2026 | **Version:** 1.0
 > 🔧 Django + DRF — `veritas` app | 🤖 Gemini 1.5 Flash | ☁️ Google Cloud Run
 > 🔗 Company registry APIs, document verification APIs, FATF watchlists, Google Maps
 > 🔒 **INTERNAL GATE MODULE — Every new client must pass before any AI agent is activated**
@@ -14,7 +14,7 @@
 **AI Employee Name:** Veritas *(Latin: Truth)*
 **Department:** Internal Risk & Compliance (NeurolinkIT)
 
-**Core Function:** Before any client can hire a Bengal Bound AI employee, Veritas verifies they are a **legally registered, legitimate business entity** operating in accordance with applicable law. No AI agent is activated for any client until Veritas issues a **Green KYB Clearance**.
+**Core Function:** Before any client can hire a Nexara AI employee, Veritas verifies they are a **legally registered, legitimate business entity** operating in accordance with applicable law. No AI agent is activated for any client until Veritas issues a **Green KYB Clearance**.
 
 > ### 🛡️ The Veritas Mandate
 > *"We only work with real businesses. Every client is verified against company registries, sanctions lists, and AML watchlists before a single AI agent is activated. No exceptions."*
@@ -333,4 +333,4 @@ pip install google-generativeai google-cloud-vision googlemaps requests reportla
 > The `ClientApplication.status` field is checked by Inspector before any AI agent API call. If status is not `approved`, all agent endpoints return `HTTP 403 — KYB Verification Required`. No workaround exists.
 
 ---
-*Bengal Bound / NeurolinkIT — Compliance Team*
+*Nexara / NeurolinkIT — Compliance Team*

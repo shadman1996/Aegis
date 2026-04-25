@@ -1,7 +1,7 @@
 # Module Requirements: Inspector — AI Compliance, Ethics & Cybersecurity Monitor
-# Bengal Bound Integration
+# Nexara Integration
 
-> **Prepared for:** Bengal Bound | **Date:** April 2026 | **Version:** 2.0 — Global Edition
+> **Prepared for:** Nexara | **Date:** April 2026 | **Version:** 2.0 — Global Edition
 > 🔧 Django + DRF — `inspector` app | 🤖 Gemini 1.5 Flash | ☁️ Google Cloud Run
 > 🔒 **INTERNAL SYSTEM MODULE — Not sold as standalone. Cannot be disabled.**
 > 🛡️ **Always-on. Covers every AI agent's shift. No exceptions. Worldwide.**
@@ -11,12 +11,12 @@
 ## Section 1: Overview & Mandate
 
 **Module Name:** Inspector — AI Compliance, Ethics & Cybersecurity Monitor
-**Department:** Internal Platform Safety (NeurolinkIT / Bengal Bound Operations)
+**Department:** Internal Platform Safety (NeurolinkIT / Nexara Operations)
 
-**Core Function:** Inspector is the internal watchdog that monitors **every single action taken by every AI agent** on the Bengal Bound platform in real time — before it executes. It enforces legal, ethical, cybersecurity, and platform-level rules across **every jurisdiction Bengal Bound operates in**, globally.
+**Core Function:** Inspector is the internal watchdog that monitors **every single action taken by every AI agent** on the Nexara platform in real time — before it executes. It enforces legal, ethical, cybersecurity, and platform-level rules across **every jurisdiction Nexara operates in**, globally.
 
 > ### 🛡️ The Inspector Mandate
-> *"No Bengal Bound AI will ever take an action that is illegal, unethical, discriminatory, a cybersecurity risk, or outside its authorized scope — in any country, under any circumstance. Inspector enforces this 24 hours a day, 7 days a week, 365 days a year, covering every agent's shift automatically."*
+> *"No Nexara AI will ever take an action that is illegal, unethical, discriminatory, a cybersecurity risk, or outside its authorized scope — in any country, under any circumstance. Inspector enforces this 24 hours a day, 7 days a week, 365 days a year, covering every agent's shift automatically."*
 
 ---
 
@@ -30,9 +30,9 @@ Inspector enforces compliance with **all major worldwide standards** listed belo
 |---|---|---|
 | **ISO/IEC 27001:2022** | International Information Security Management System | Data classification, access controls, incident response, asset management across all AI agent actions |
 | **ISO/IEC 27701:2019** | Privacy Information Management (extends 27001) | Personal data processing rules for all agents handling PII |
-| **ISO/IEC 27017:2015** | Cloud Security Controls | Cloud-specific controls for all Bengal Bound AI services on Google Cloud Run |
+| **ISO/IEC 27017:2015** | Cloud Security Controls | Cloud-specific controls for all Nexara AI services on Google Cloud Run |
 | **ISO/IEC 27018:2019** | Protection of PII in Public Clouds | Consent, transparency, data minimization for cloud-processed personal data |
-| **ISO/IEC 42001:2023** | AI Management System | AI-specific governance, risk, and accountability — directly governs all Bengal Bound AI agents |
+| **ISO/IEC 42001:2023** | AI Management System | AI-specific governance, risk, and accountability — directly governs all Nexara AI agents |
 | **NIST CSF 2.0** | Cybersecurity Framework (US NIST) | Govern → Identify → Protect → Detect → Respond → Recover lifecycle for all agents |
 | **NIST AI RMF** | AI Risk Management Framework (2023) | AI-specific risk: Map → Measure → Manage → Govern for every agent |
 | **NIST SP 800-53 Rev 5** | Security & Privacy Controls | Access control, audit logging, incident response, system integrity controls |
@@ -92,7 +92,7 @@ Inspector enforces compliance with **all major worldwide standards** listed belo
 
 | Standard | Scope | Enforced For |
 |---|---|---|
-| **SOC 2 Type II** | Service organization controls (availability, security, confidentiality) | All Bengal Bound platform operations |
+| **SOC 2 Type II** | Service organization controls (availability, security, confidentiality) | All Nexara platform operations |
 | **PCI DSS v4.0** | Payment card data security | Finn (Finance), any module handling payment data |
 | **HIPAA / HITECH** | Health information security | MediBook module, any client in healthcare |
 | **ISO 13485** | Medical device software (if applicable) | MediBook in regulated medical device contexts |
@@ -317,15 +317,15 @@ All endpoints under `/internal/inspector/` — **TLS required, MFA-gated, IP-res
 
 ---
 
-## Section 9: The Bengal Bound AI Safety Promise
+## Section 9: The Nexara AI Safety Promise
 
 > ✅ **Included in every client contract:**
 >
-> Every AI employee on the Bengal Bound platform is supervised by **Inspector** — our always-on compliance and cybersecurity engine — which enforces **40+ global data protection laws**, **10+ international cybersecurity frameworks**, and the **EU AI Act** before any agent takes action.
+> Every AI employee on the Nexara platform is supervised by **Inspector** — our always-on compliance and cybersecurity engine — which enforces **40+ global data protection laws**, **10+ international cybersecurity frameworks**, and the **EU AI Act** before any agent takes action.
 >
 > We don't just build capable AI. We build **trustworthy, auditable, globally-compliant AI.**
 >
-> — *NeurolinkIT, Bengal Bound Operations*
+> — *NeurolinkIT, Nexara Operations*
 
 ---
 

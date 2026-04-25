@@ -1,7 +1,7 @@
 # Module Requirements: Flux — AI Logistics & Supply Chain Coordinator
-# Bengal Bound Integration
+# Nexara Integration
 
-> **Prepared for:** Bengal Bound | **Date:** April 2026 | **Version:** 1.0
+> **Prepared for:** Nexara | **Date:** April 2026 | **Version:** 1.0
 > 🔧 Django + DRF — `flux` app | 🤖 Gemini 1.5 Flash | ☁️ Google Cloud Run
 
 ---
@@ -134,4 +134,4 @@ pip install google-generativeai requests django-apscheduler reportlab
 | Mid | ৳5,000 | 1,000 | Shipment tracking, scoring |
 | Senior | ৳10,000 | Unlimited | Forecasting, cost optimiser, multi-warehouse |
 
-*Bengal Bound / NeurolinkIT*
+*Nexara / NeurolinkIT*

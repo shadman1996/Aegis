@@ -1,7 +1,7 @@
 # Module Requirements: Nexus — AI Training & L&D Coordinator
-# Bengal Bound Integration
+# Nexara Integration
 
-> **Prepared for:** Bengal Bound | **Date:** April 2026 | **Version:** 1.0
+> **Prepared for:** Nexara | **Date:** April 2026 | **Version:** 1.0
 > 🔧 Django + DRF — `nexus` app | 🤖 Gemini 1.5 Flash | ☁️ Google Cloud Run
 
 ---
@@ -100,4 +100,4 @@ pip install google-generativeai reportlab django-apscheduler
 | Mid | ৳5,000 | 200 | Skill gaps, learning paths |
 | Senior | ৳10,000 | Unlimited | Manager dashboard, analytics |
 
-*Bengal Bound / NeurolinkIT*
+*Nexara / NeurolinkIT*

@@ -1,7 +1,7 @@
 # Module Requirements: Oracle — AI SEO Specialist
-# Bengal Bound Integration
+# Nexara Integration
 
-> **Prepared for:** Bengal Bound | **Date:** April 2026 | **Version:** 1.0
+> **Prepared for:** Nexara | **Date:** April 2026 | **Version:** 1.0
 > 🔧 Django + DRF — `oracle` app | 🤖 Gemini 1.5 Flash | ☁️ Google Cloud Run
 > 🔗 Google Search Console API, Google Analytics 4, Ahrefs API, Semrush API, WordPress REST API
 
@@ -158,4 +158,4 @@ pip install google-generativeai scrapy beautifulsoup4 requests reportlab google-
 | Senior | ৳10,000 | Unlimited | Auto-fix, backlinks, content briefs |
 
 ---
-*Bengal Bound / NeurolinkIT*
+*Nexara / NeurolinkIT*

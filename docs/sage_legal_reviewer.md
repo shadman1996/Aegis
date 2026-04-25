@@ -1,7 +1,7 @@
 # Module Requirements: Sage — AI Legal Document Reviewer
-# Bengal Bound Integration
+# Nexara Integration
 
-> **Prepared for:** Bengal Bound | **Date:** April 2026 | **Version:** 1.0
+> **Prepared for:** Nexara | **Date:** April 2026 | **Version:** 1.0
 > 🔧 Django + DRF — `sage` app | 🤖 Gemini 1.5 Flash | ☁️ Google Cloud Run
 > 🔗 DocuSign API, Google Drive API, PDF/DOCX processing
 
@@ -147,4 +147,4 @@ pip install google-generativeai pdfplumber python-docx reportlab django-apschedu
 | Senior | ৳10,000 | Unlimited | NDA classifier, negotiation suggestions, DocuSign |
 
 ---
-*Bengal Bound / NeurolinkIT*
+*Nexara / NeurolinkIT*

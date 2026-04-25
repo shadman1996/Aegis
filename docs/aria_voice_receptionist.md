@@ -1,7 +1,7 @@
 # Module Requirements: Aria — AI Voice Receptionist
-# Bengal Bound Integration
+# Nexara Integration
 
-> **Prepared for:** Bengal Bound | **Date:** April 2026 | **Version:** 1.0
+> **Prepared for:** Nexara | **Date:** April 2026 | **Version:** 1.0
 > 🔧 Django + DRF — `aria` app | 🤖 Gemini 1.5 Flash + Google Cloud STT/TTS | ☁️ Google Cloud Run
 > 🔗 Twilio Voice, Google Cloud Speech-to-Text, Google Cloud Text-to-Speech, Google Calendar
 
@@ -145,4 +145,4 @@ pip install google-generativeai twilio google-cloud-speech google-cloud-texttosp
 | Senior | ৳10,000 | Unlimited | Multi-language, routing, full dashboard |
 
 ---
-*Bengal Bound / NeurolinkIT*
+*Nexara / NeurolinkIT*

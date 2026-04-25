@@ -1,7 +1,7 @@
 # Module Requirements: MediBook — AI Healthcare Scheduler
-# Bengal Bound Integration
+# Nexara Integration
 
-> **Prepared for:** Bengal Bound | **Date:** April 2026 | **Version:** 1.0
+> **Prepared for:** Nexara | **Date:** April 2026 | **Version:** 1.0
 > 🔧 Django + DRF — `medibook` app | 🤖 Gemini 1.5 Flash | ☁️ Google Cloud Run
 > 🔗 Google Calendar, Twilio SMS, WhatsApp Business API, clinic management system webhooks
 
@@ -148,4 +148,4 @@ pip install google-generativeai twilio google-api-python-client google-auth djan
 | Senior | ৳10,000 | Unlimited | Multi-doctor, multi-clinic, patient portal |
 
 ---
-*Bengal Bound / NeurolinkIT*
+*Nexara / NeurolinkIT*

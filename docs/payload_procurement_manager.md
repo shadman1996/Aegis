@@ -1,7 +1,7 @@
 # Module Requirements: Payload — AI Procurement & Vendor Manager
-# Bengal Bound Integration
+# Nexara Integration
 
-> **Prepared for:** Bengal Bound | **Date:** April 2026 | **Version:** 1.0
+> **Prepared for:** Nexara | **Date:** April 2026 | **Version:** 1.0
 > 🔧 Django + DRF — `payload` app | 🤖 Gemini 1.5 Flash | ☁️ Google Cloud Run
 
 ---
@@ -118,4 +118,4 @@ pip install google-generativeai reportlab django-apscheduler requests pdfplumber
 | Mid | ৳5,000 | 200 | Approval workflow, performance scores |
 | Senior | ৳10,000 | Unlimited | Spend analytics, preferred vendor AI |
 
-*Bengal Bound / NeurolinkIT*
+*Nexara / NeurolinkIT*

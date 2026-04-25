@@ -1,7 +1,7 @@
 # Module Requirements: Atlas — AI Executive Assistant
-# Bengal Bound Integration
+# Nexara Integration
 
-> **Prepared for:** Bengal Bound | **Date:** April 2026 | **Version:** 1.0
+> **Prepared for:** Nexara | **Date:** April 2026 | **Version:** 1.0
 > 🔧 Django + DRF — `atlas` app | 🤖 Gemini 1.5 Flash | ☁️ Google Cloud Run
 > 🔗 Google Calendar, Gmail, Google Drive, Notion, Slack
 
@@ -118,4 +118,4 @@ pip install google-generativeai google-api-python-client google-auth pdfplumber 
 | Mid | ৳5,000 | Meeting briefs, expense tracker, task management |
 | Senior | ৳10,000 | Full EA suite, Slack, document organiser, travel |
 
-*Bengal Bound / NeurolinkIT*
+*Nexara / NeurolinkIT*

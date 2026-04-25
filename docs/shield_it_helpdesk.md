@@ -1,7 +1,7 @@
 # Module Requirements: Shield — AI IT Helpdesk Support
-# Bengal Bound Integration
+# Nexara Integration
 
-> **Prepared for:** Bengal Bound | **Date:** April 2026 | **Version:** 1.0
+> **Prepared for:** Nexara | **Date:** April 2026 | **Version:** 1.0
 > 🔧 Django + DRF — `shield_helpdesk` app | 🤖 Gemini 1.5 Flash | ☁️ Google Cloud Run
 > 🔗 Jira Service Desk, Freshdesk, Slack, Microsoft Teams, email
 
@@ -123,4 +123,4 @@ class ITAsset(models.Model):
 | Mid | ৳5,000 | 1,000 | Slack/Teams, asset tracker, escalation |
 | Senior | ৳10,000 | Unlimited | Jira sync, access workflows, reports |
 
-*Bengal Bound / NeurolinkIT*
+*Nexara / NeurolinkIT*

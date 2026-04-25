@@ -1,7 +1,7 @@
 # Module Requirements: Kai — AI DevOps Engineer
-# Bengal Bound Integration
+# Nexara Integration
 
-> **Prepared for:** Bengal Bound | **Date:** April 2026 | **Version:** 1.0
+> **Prepared for:** Nexara | **Date:** April 2026 | **Version:** 1.0
 > 🔧 Django + DRF — `kai` app | 🤖 Gemini 1.5 Flash | ☁️ Google Cloud Run
 > 🔗 GitHub API, GitLab API, Docker Hub, Kubernetes API, Prometheus, PagerDuty
 
@@ -163,4 +163,4 @@ pip install google-generativeai requests docker pip-audit safety django-apschedu
 | Senior | ৳10,000 | Unlimited | Docker optimizer, IaC patches, analytics |
 
 ---
-*Bengal Bound / NeurolinkIT*
+*Nexara / NeurolinkIT*

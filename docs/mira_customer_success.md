@@ -1,7 +1,7 @@
 # Module Requirements: Mira — AI Customer Success Manager
-# Bengal Bound Integration
+# Nexara Integration
 
-> **Prepared for:** Bengal Bound | **Date:** April 2026 | **Version:** 1.0
+> **Prepared for:** Nexara | **Date:** April 2026 | **Version:** 1.0
 > 🔧 Django + DRF — `mira` app | 🤖 Gemini 1.5 Flash | ☁️ Google Cloud Run
 > 🔗 HubSpot, Intercom, Zendesk, Stripe, NPS tools, email
 
@@ -120,4 +120,4 @@ class NPSResponse(models.Model):
 | Mid | ৳5,000 | 200 | NPS, upsell detection, renewal mgmt |
 | Senior | ৳10,000 | Unlimited | CRM sync, predictive churn, analytics |
 
-*Bengal Bound / NeurolinkIT*
+*Nexara / NeurolinkIT*

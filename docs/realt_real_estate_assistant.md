@@ -1,7 +1,7 @@
 # Module Requirements: Realt — AI Real Estate Assistant
-# Bengal Bound Integration
+# Nexara Integration
 
-> **Prepared for:** Bengal Bound | **Date:** April 2026 | **Version:** 1.0
+> **Prepared for:** Nexara | **Date:** April 2026 | **Version:** 1.0
 > 🔧 Django + DRF — `realt` app | 🤖 Gemini 1.5 Flash | ☁️ Google Cloud Run
 > 🔗 WhatsApp Business API, Google Calendar, Facebook Marketplace API, bdjobs/property portal webhooks
 
@@ -149,4 +149,4 @@ pip install google-generativeai reportlab google-api-python-client google-auth d
 | Senior | ৳10,000 | Unlimited | Market reports, portal sync, multi-agent |
 
 ---
-*Bengal Bound / NeurolinkIT*
+*Nexara / NeurolinkIT*

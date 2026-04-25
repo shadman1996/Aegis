@@ -1,7 +1,7 @@
 # Module Requirements: Luma — AI Brand Manager & PR Monitor
-# Bengal Bound Integration
+# Nexara Integration
 
-> **Prepared for:** Bengal Bound | **Date:** April 2026 | **Version:** 1.0
+> **Prepared for:** Nexara | **Date:** April 2026 | **Version:** 1.0
 > 🔧 Django + DRF — `luma` app | 🤖 Gemini 1.5 Flash | ☁️ Google Cloud Run
 
 ---
@@ -105,4 +105,4 @@ pip install google-generativeai requests beautifulsoup4 newsapi-python praw twee
 | Mid | ৳5,000 | Review mgmt, press release, monthly report |
 | Senior | ৳10,000 | Media contacts, PR distribution, full analytics |
 
-*Bengal Bound / NeurolinkIT*
+*Nexara / NeurolinkIT*
