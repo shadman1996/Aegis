@@ -1,21 +1,19 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
-import HowItWorks from "@/components/HowItWorks";
-import ZeroBreakage from "@/components/ZeroBreakage";
-import SOCBacking from "@/components/SOCBacking";
-import PricingSection from "@/components/PricingSection";
-import Footer from "@/components/Footer";
+import AgentsShowcase from "@/components/AgentsShowcase";
+import HowNexaraWorks from "@/components/HowNexaraWorks";
+import NexaraPricing from "@/components/NexaraPricing";
+import NexaraFooter from "@/components/NexaraFooter";
 
 export default function Home() {
   return (
     <main>
       <Navbar />
       <HeroSection />
-      <HowItWorks />
-      <ZeroBreakage />
-      <SOCBacking />
-      <PricingSection />
-      <Footer />
+      <AgentsShowcase />
+      <HowNexaraWorks />
+      <NexaraPricing />
+      <NexaraFooter />
     </main>
   );
 }

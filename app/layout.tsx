@@ -3,16 +3,22 @@ import "./globals.css";
 import { ClientProviders } from "@/components/ClientProviders";
 
 export const metadata: Metadata = {
-  title: "Aegis — Enterprise Security. Zero Breakage. One Click.",
+  title: "Nexara — Hire AI Employees. Grow Without Limits.",
   description:
-    "Aegis is the AI-powered cyber remediation platform that automatically fixes your vulnerabilities without breaking your systems. Free scanner, AI credits, 24/7 human SOC backing.",
+    "Nexara is the AI-as-Employee marketplace. Hire 30+ specialised AI agents who do real business jobs 24/7 — from lead generation to HR, finance to logistics. Inspector-certified compliance built in. 10× cheaper than hiring humans.",
   keywords:
-    "cybersecurity, AI remediation, vulnerability scanner, zero breakage, SOC, enterprise security",
+    "AI employees, AI agents, AI workforce, AI CRM, AI HR, AI marketing, compliance AI, Bangladesh SaaS, AI ERP, hire AI, Nexara",
   openGraph: {
-    title: "Aegis — Enterprise Security. Zero Breakage. One Click.",
+    title: "Nexara — Hire AI Employees. Grow Without Limits.",
     description:
-      "AI-powered cyber remediation. Free scanner. One-click fixes. Zero breakage guaranteed.",
+      "30+ AI employees. Every business function. Inspector compliance built in. Start free.",
     type: "website",
+    siteName: "Nexara by Bengal Bound",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nexara — Hire AI Employees. Grow Without Limits.",
+    description: "30+ AI employees. Every job. 24/7. Inspector-certified.",
   },
 };
 

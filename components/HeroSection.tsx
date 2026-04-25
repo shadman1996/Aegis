@@ -1,13 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Zap, ChevronRight, Play, Shield } from "lucide-react";
+import { Zap, ChevronRight, Play, BrainCircuit } from "lucide-react";
 
 const stats = [
-  { value: "99.97%", label: "Zero-Breakage Rate" },
-  { value: "<3min", label: "Avg. Remediation Time" },
-  { value: "24/7", label: "Human SOC Backing" },
-  { value: "Free", label: "Network Scanner" },
+  { value: "30+", label: "AI Employees" },
+  { value: "10×", label: "Cheaper Than Human" },
+  { value: "24/7", label: "Always Working" },
+  { value: "40+", label: "Laws Enforced" },
 ];
 
 export default function HeroSection() {
@@ -95,7 +95,7 @@ export default function HeroSection() {
               textTransform: "uppercase",
             }}
           >
-            AI-Powered · Zero Breakage · Always Free to Scan
+            AI Employees · Compliance-First · From Bangladesh, For the World
           </span>
         </motion.div>
 
@@ -114,11 +114,11 @@ export default function HeroSection() {
             marginBottom: 24,
           }}
         >
-          Enterprise Security.{" "}
+          Hire AI Employees.{" "}
           <span className="gradient-text-cyan text-glow-cyan">
-            Zero Breakage.
+            Grow Without Limits.
           </span>{" "}
-          One Click.
+          Inspector-Certified.
         </motion.h1>
 
         {/* Subheadline */}
@@ -136,13 +136,13 @@ export default function HeroSection() {
             margin: "0 auto 40px",
           }}
         >
-          Run a{" "}
+          Meet your new{" "}
           <strong style={{ color: "#E2E8F0", fontWeight: 600 }}>
-            100% free network and cloud vulnerability scan
+            AI workforce — 30+ specialised agents
           </strong>
-          . Get a plain-English report. Then let our AI automatically fix every
-          issue — simulated first, applied only when safe. Backed by our 24/7
-          human SOC team in case things get complex.
+          {" "}who do real business jobs 24/7. From lead generation to HR, finance
+          to logistics — all supervised by Inspector, the world&apos;s only
+          built-in AI compliance engine. 10× cheaper than hiring humans.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -163,19 +163,19 @@ export default function HeroSection() {
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}
             className="btn-primary glow-cyan"
-            id="hero-cta-free-scan"
+            id="hero-cta-hire-agent"
           >
             <Zap size={20} />
-            Run Free Security Scan
+            Hire Your First AI Employee
             <ChevronRight size={18} />
           </motion.a>
 
           <motion.a
-            href="#how-it-works"
+            href="#agents"
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}
             className="btn-secondary"
-            id="hero-cta-how-it-works"
+            id="hero-cta-meet-agents"
             style={{
               display: "inline-flex",
               alignItems: "center",
@@ -183,7 +183,7 @@ export default function HeroSection() {
             }}
           >
             <Play size={16} />
-            See How It Works
+            Meet the AI Team
           </motion.a>
         </motion.div>
 
@@ -267,7 +267,7 @@ export default function HeroSection() {
               "0 0 40px rgba(0,216,255,0.2), 0 0 80px rgba(139,92,246,0.1)",
           }}
         >
-          <Shield size={56} color="#00D8FF" strokeWidth={1.5} />
+          <BrainCircuit size={56} color="#00D8FF" strokeWidth={1.5} />
         </motion.div>
       </div>
     </section>

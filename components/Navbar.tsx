@@ -5,11 +5,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Zap, ChevronDown } from "lucide-react";
 
 const navLinks = [
-  { label: "AI Employees", href: "#agents" },
-  { label: "How It Works", href: "#how-it-works" },
-  { label: "Security", href: "#security" },
+  { label: "AI Agents", href: "#agents" },
+  { label: "Platform", href: "#platform" },
+  { label: "Integrations", href: "#integrations" },
   { label: "Pricing", href: "#pricing" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Partners", href: "#partners" },
 ];
 
 export default function Navbar() {
